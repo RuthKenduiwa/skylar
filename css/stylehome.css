@@ -50,7 +50,11 @@
     color: black;
     box-shadow: 0 0 10px white;
 }
-
+ 
+/*Responsive navbar*/
+#menu{
+    display: none;
+}
 
 /* Home Section*/
 #home{
@@ -107,4 +111,80 @@
 span{
     color: #f9004d;
 }
+@media (max-width:668px){
+    body{
+        width: 100%;
+    }
+
+    #home{
+        width: 100%;
+    }
+    /* .btn{
+        width: 100%;
+    } */
+    
+    #navbar{
+        display: none;
+    }
+
+    #menu{
+        color: white;
+        display: block;
+        float: right;
+    }
+    #close{
+        float: right;
+    }
+    #navbar ul{
+        display: block;
+        list-style: none;
+        margin: 20px 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

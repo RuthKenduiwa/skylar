@@ -1,15 +1,14 @@
-var navbar = document.getElementById("menu");
-var close = document.getElementById("close");
+var navbar = document.getElementsByClassName("navbar");
+var menu = document.getElementsByClassName("menu");
+var clickCount = 0
 
-navbar .addEventListener("click",function(){
-    document.getElementsByClass("navbar").style.display = "block";
-    document.getElementsByClass("menu").style.display = "none";
-    document.getElementsByClass("close").style.display = "block";
-})
-
-close.addEventListener("click",function(){
-    document.getElementsByClass("navbar").style.display = "block";
-    document.getElementsByClass("menu").style.display = "none";
-    document.getElementsByClass("close").style.display = "block";
-
+menu.addEventListener("click",function(){
+    clickCount++;
+    if (clickCount === 1) {
+      navbar.style.display = "block";
+      console.log(clickCount)
+    } else if (clickCount === 2) {
+      navbar.style.display = "none";
+      clickCount = 0; // Reset clickCount for future clicks
+    }
 })
